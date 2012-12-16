@@ -2,9 +2,22 @@ from collections import OrderedDict
 from collections import deque
 
 
+class Edge(object):
+    """
+    .. option:: synopsis
+
+    Representing the edge of a :class:`graph`.
+
+    :param ln: linenumber
+    :type ln: int
+    """
+
+    def __init__(self, ln):
+        self.ln = ln
+
+
 class Graph(object):
     """
-    .. module:: graph
     .. option:: synopsis
 
     A graph which represents a function visited by a
